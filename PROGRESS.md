@@ -57,3 +57,11 @@
 - Live X Layer deploy attempt:
   - `pnpm deploy:xlayer` stopped before network mutation with `No deployer signer available. Set DEPLOYER_PRIVATE_KEY before deploying to X Layer.`
 - Active local app URL: `http://127.0.0.1:5173/`.
+
+## 2026-05-21 06:32 IST
+
+- GitHub ownership check found `gh` initially pointed at `RayCosmiclan`; switched the active `github.com` CLI account to `gabrielantonyxaviour` before repo creation.
+- Public repository created and pushed:
+  - `https://github.com/gabrielantonyxaviour/standoff-cosigner-xlayer`
+  - Commit: `7cdbb13 feat: build standoff co-signer`
+- Updated handoff docs to reflect the real public repo state.

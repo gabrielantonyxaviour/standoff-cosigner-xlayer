@@ -9,7 +9,7 @@
 
 ## Owner Verification
 
-- `gh auth status` on 2026-05-21 shows active account `gabrielantonyxaviour`.
+- `gh api user --jq '.login'` on 2026-05-21 was corrected to active account `gabrielantonyxaviour`.
 - Gabriel is the selected submitter from `submission-profile-registry.json`.
 
 ## Creation Method
@@ -18,11 +18,15 @@ Use GitHub CLI because the active CLI account is the selected primary owner. If 
 
 ## Push And Deploy Steps
 
-1. Scaffold and verify locally.
-2. `gh repo create gabrielantonyxaviour/standoff-cosigner-xlayer --public --source=. --remote=origin --push`
-3. Confirm repo visibility with `gh repo view`.
-4. Optional deploy: Vercel or static artifact after the app builds.
+1. Scaffold and verify locally. Done.
+2. `gh repo create gabrielantonyxaviour/standoff-cosigner-xlayer --public --source=. --remote=origin --push`. Done.
+3. Confirm repo visibility with `gh repo view`. Done.
+4. Optional deploy: Vercel or static artifact after the app builds. Not performed because the required public source/demo path is already available and no irreversible submit action was approved.
 
 ## Status
 
-Not created at initial planning time. Creation happens after the first implementation and verification pass so the public repo is not an empty shell.
+Public repo created and pushed on 2026-05-21:
+
+- URL: `https://github.com/gabrielantonyxaviour/standoff-cosigner-xlayer`
+- Visibility: public
+- Current pushed commit: `7cdbb13 feat: build standoff co-signer`
