@@ -77,18 +77,18 @@ export default function App() {
   return (
     <main className="shell">
       <nav className="topbar" aria-label="Primary">
-        <a className="brand" href="/" aria-label="Standoff Co-Signer home">
+        <a className="brand" href="/" aria-label="X Cup SafeBet Co-Signer home">
           <span className="brand-mark" aria-hidden>
             <ShieldCheck size={18} />
           </span>
           <span className="brand-text">
-            <strong>Standoff Co-Signer</strong>
-            <small>Two-agent quorum gateway · X Layer</small>
+            <strong>X Cup SafeBet Co-Signer</strong>
+            <small>World Cup trading guard · X Layer</small>
           </span>
         </a>
         <div className="nav-pills" aria-label="Stack">
           <span>X Layer</span>
-          <span>OnchainOS-ready</span>
+          <span>Prediction safety</span>
           <span>EIP-712 quorum</span>
         </div>
       </nav>
@@ -96,12 +96,12 @@ export default function App() {
       <section className="hero">
         <div className="hero-grid" aria-hidden />
         <div className="hero-copy">
-          <p className="eyebrow">Prompt-injection resistant agent spending</p>
-          <h1>Money moves only when both agents sign the same digest.</h1>
+          <p className="eyebrow">World Cup fan-agent safety gateway</p>
+          <h1>No bad match bet moves on one AI’s say-so.</h1>
           <p className="lede">
-            Standoff canonicalises every proposed transaction, forces two heterogeneous co-signers to inspect the
-            same digest, and lets the on-chain gateway execute only when both EIP-712 approvals agree. One
-            compromised model is not enough.
+            X Cup SafeBet Co-Signer canonicalises every proposed match bet, swap, or payout, forces two
+            heterogeneous agents to inspect the same digest, and lets the on-chain gateway execute only when both
+            EIP-712 approvals agree. One compromised fan agent is not enough.
           </p>
         </div>
 

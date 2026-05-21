@@ -1,23 +1,25 @@
 {
-  "generatedAt": "2026-05-21T00:48:35.948Z",
+  "generatedAt": "2026-05-21T23:59:04.516Z",
   "network": "hardhat",
   "chainId": 31337,
   "gateway": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
   "receiptRegistry": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
   "agenticWalletAddress": "0x4150bc36f6c8f7fb5dd129cf3b88dc1babe06a61",
-  "submissionStatus": "Build X public form inspected on 2026-05-21; form fields were disabled.",
+  "project": "X Cup SafeBet Co-Signer",
+  "xcupTrack": "World Cup trading / prediction safety",
+  "submissionStatus": "X Cup form is live; final submit, project X post, and legal actions are pending approval.",
   "scenarios": [
     {
       "id": "malicious",
-      "title": "Prompt-injected malicious payment",
+      "title": "Prompt-injected bad match bet",
       "status": "blocked",
-      "digest": "0x46c7b69f3dedf6fa7bf62b3586cac06c2643a5d251f39a2e0bf5cbfd9f444494",
-      "canonicalDigest": "0x3556365d21d1b9df091b780c7a4b71a954e0b725bb39200445551d7c0d8bb717",
+      "digest": "0x275eb4de65f02f5c6c0557e383fc4e36c8a4afa0790c9799b4b8a9656d705b5f",
+      "canonicalDigest": "0xdd499b3f981b1a9cbe766365a4028742200caa0d9355719736d7b66735a32023",
       "target": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
       "valueEth": "0.01",
-      "receiptHash": "0x6a87f06f84f1fb6caba1b86127ed3730f666339143d34134af5ecb1103163a54",
+      "receiptHash": "0x1d0f27561076b9eb4821d5bcfb8c3cd08b5fb4199766c13217fbf3ba24b940aa",
       "executionTx": "",
-      "gatewayResult": "VM Exception while processing transaction: reverted with custom error 'RejectedByCoSigner(\"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\", \"0x89792bf3646ecd548c698647cced05b24e2e28e0976d3af8c03212ffb41394d9\")'",
+      "gatewayResult": "VM Exception while processing transaction: reverted with custom error 'RejectedByCoSigner(\"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\", \"0xdc2711526422501098d9e7a0bcd500d024419a1b3d0b029980987bc73f63a0b1\")'",
       "coSigners": [
         {
           "agent": "Co-signer A",
@@ -27,9 +29,9 @@
           "reasonCodes": [
             "PROMPT_INJECTION_MISSED"
           ],
-          "evidenceHash": "0x132d660529cd3d2d285cf69ddbcdf655769eab02fafb639ca4e9e3c1fd8167ab",
+          "evidenceHash": "0xb11b46124fd890d9232fe201b7848308c8bf49b2ef80ca4af959e1a0f317e450",
           "signer": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
-          "signature": "0x88adfe3414655d98699e5e161051b6b70255ad4d734359817a9bbc5806d4ca252792bef76a5984f6a88b1a4f86d5c090bac47a88d481f9562d41fa0ce50d28b91b"
+          "signature": "0x82df8e5cd9ad522fe54306bb31e4784bce135fe3074b2542983f028900624aef48ae4c0aa13c175d62faac05d8678283685feaf738fa689557aef4e8dfe595df1c"
         },
         {
           "agent": "Co-signer B",
@@ -40,22 +42,22 @@
             "RECIPIENT_DRIFT",
             "PROMPT_INJECTION"
           ],
-          "evidenceHash": "0x89792bf3646ecd548c698647cced05b24e2e28e0976d3af8c03212ffb41394d9",
+          "evidenceHash": "0xdc2711526422501098d9e7a0bcd500d024419a1b3d0b029980987bc73f63a0b1",
           "signer": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
-          "signature": "0xd2d393ab8115d0c0ca0b147b79bff1df596ee6e9c524638bd470ca63491caa850f602dae6bd4629c77a5f256b3d34bd3989a48431efdb23bf1b991662429f7331c"
+          "signature": "0xb1e04df70c3ebe3be75ad7bcab58a267cf93c7be5f311deae6d87c4fc542a9764af4fb62bb39b326644e4edf424e0b874146488c47866d2e649c7ae6d479724f1c"
         }
       ]
     },
     {
       "id": "normal",
-      "title": "Normal service payment",
+      "title": "Approved Argentina-France hedge",
       "status": "executed",
-      "digest": "0xd36275df3bd36419a162ec9b7c31b6eab293025fedc184344805ae0c8cdaf5e1",
-      "canonicalDigest": "0xe8271076035328d27ab7d26670eb8ae8fd8aae350042c4c3cbf608a27234c9d6",
+      "digest": "0xa284ea7fee60ae1a374945398d2c8b750a9a5bcafb468806b234009df8138d4d",
+      "canonicalDigest": "0x235458ea727bbf7471d9be9c1948785a5bf1135a6313df72ea6950ed8763fc4f",
       "target": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
       "valueEth": "0.01",
-      "receiptHash": "0xa600baee279c77097cbe27f217470c7a9d8eec07bab889dd200aaafb0a50f6de",
-      "executionTx": "0x8a7f87ab7c0e3b9a5d80a51deb9893dedf3f843021c62b3389af8f7d8a1e083c",
+      "receiptHash": "0xe3d901d6b964724eb7f8e701e823df6d9feac50f520e6aa5ade31778dae61c58",
+      "executionTx": "0xc8fb5b6062f1e54f96f132ab2e7c2c458be7536f6f78afe57d73b1f10c1bff40",
       "gatewayResult": "Gateway executed after both co-signers approved.",
       "coSigners": [
         {
@@ -66,9 +68,9 @@
           "reasonCodes": [
             "POLICY_MATCH"
           ],
-          "evidenceHash": "0xb0a116978bfdc3daf4f78caf9ee53e2f593355471e3ba0c1d9cbdb094c3f597e",
+          "evidenceHash": "0x6ebf3f09382f651ec23a07fdd668857a309624cb05f6e05f85884b740c707c45",
           "signer": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
-          "signature": "0xc226368b69f23997e4482ec90dce8829acb707d30c36464c887d0195ac95796a35c69dd3f2e990722f41e07986f359da9fd999ba94ffe6a5d2779da13419e2591c"
+          "signature": "0xa257ec26184e8b10e5eacddb134e5e1d22f400737b3f556a20e408cf1be84db41db891e58b97f86bcd3762b422d8259ecf1fce22bb54326783d0fea29f1521dd1c"
         },
         {
           "agent": "Co-signer B",
@@ -78,9 +80,9 @@
           "reasonCodes": [
             "POLICY_MATCH"
           ],
-          "evidenceHash": "0xcfb89fcc16db8f5c7c2ede8a2f9d5168589bb19015519772d837e6c9747994f3",
+          "evidenceHash": "0xe5b7991264a3a0f64626c81f5e22a20896f1d590ee7ee3406fe771be9410e27b",
           "signer": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
-          "signature": "0x420052f71612b877ac342ed707b3937ff275eb4a762596745e3be2e16cb2674203de5fc371cad21e97ef660c08c98fa2f6ef51d950e83f7db199cf26cc9be39a1c"
+          "signature": "0xebd8dcb8fe16929c312cef4355d528322ed2cc15489036159bd449254d841d7364367bfde7a349f09d9ff3b44801a0894c27f6f90298e152bd8480ab0853d1001c"
         }
       ]
     }
