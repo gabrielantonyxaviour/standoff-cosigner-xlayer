@@ -29,4 +29,5 @@ Public repo created and pushed on 2026-05-21:
 
 - URL: `https://github.com/gabrielantonyxaviour/standoff-cosigner-xlayer`
 - Visibility: public
-- Current pushed commit: `7cdbb13 feat: build standoff co-signer`
+- Implementation baseline commit: `7cdbb13 feat: build standoff co-signer`
+- Final documentation/report commits are pushed on `main`.

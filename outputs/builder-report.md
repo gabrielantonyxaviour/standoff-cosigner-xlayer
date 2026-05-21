@@ -7,7 +7,7 @@ Generated: 2026-05-21 06:32 IST
 - Planned public repo: `https://github.com/gabrielantonyxaviour/standoff-cosigner-xlayer`
 - Owner verified: `gh api user --jq '.login'` returned `gabrielantonyxaviour` after switching away from a mismatched CLI account.
 - Public repo created and pushed: `https://github.com/gabrielantonyxaviour/standoff-cosigner-xlayer`
-- Pushed commit: `7cdbb13 feat: build standoff co-signer`
+- Implementation baseline commit: `7cdbb13 feat: build standoff co-signer`; final documentation/report commits are pushed on `main`.
 - Ignored from repo: local OKX skill copies, logs, generated artifacts/cache, `node_modules`, local support notes, and secrets.
 
 ## Build Status
