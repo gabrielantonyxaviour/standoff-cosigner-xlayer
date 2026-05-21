@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-05-21T23:59:04.516Z",
+  "network": "hardhat",
+  "chainId": 31337,
+  "gateway": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+  "receiptRegistry": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+  "agenticWalletAddress": "0x4150bc36f6c8f7fb5dd129cf3b88dc1babe06a61",
+  "project": "X Cup SafeBet Co-Signer",
+  "xcupTrack": "World Cup trading / prediction safety",
+  "submissionStatus": "X Cup form is live; final submit, project X post, and legal actions are pending approval.",
+  "scenarios": [
+    {
+      "id": "malicious",
+      "title": "Prompt-injected bad match bet",
+      "status": "blocked",
+      "digest": "0x275eb4de65f02f5c6c0557e383fc4e36c8a4afa0790c9799b4b8a9656d705b5f",
+      "canonicalDigest": "0xdd499b3f981b1a9cbe766365a4028742200caa0d9355719736d7b66735a32023",
+      "target": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "valueEth": "0.01",
+      "receiptHash": "0x1d0f27561076b9eb4821d5bcfb8c3cd08b5fb4199766c13217fbf3ba24b940aa",
+      "executionTx": "",
+      "gatewayResult": "VM Exception while processing transaction: reverted with custom error 'RejectedByCoSigner(\"0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC\", \"0xdc2711526422501098d9e7a0bcd500d024419a1b3d0b029980987bc73f63a0b1\")'",
+      "coSigners": [
+        {
+          "agent": "Co-signer A",
+          "model": "fast-executor-policy",
+          "verdict": "approve",
+          "summary": "Approved after trusting the operator prompt.",
+          "reasonCodes": [
+            "PROMPT_INJECTION_MISSED"
+          ],
+          "evidenceHash": "0xb11b46124fd890d9232fe201b7848308c8bf49b2ef80ca4af959e1a0f317e450",
+          "signer": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "signature": "0x82df8e5cd9ad522fe54306bb31e4784bce135fe3074b2542983f028900624aef48ae4c0aa13c175d62faac05d8678283685feaf738fa689557aef4e8dfe595df1c"
+        },
+        {
+          "agent": "Co-signer B",
+          "model": "sentinel-policy",
+          "verdict": "reject",
+          "summary": "Blocked because the digest no longer matches the approved recipient and prompt context.",
+          "reasonCodes": [
+            "RECIPIENT_DRIFT",
+            "PROMPT_INJECTION"
+          ],
+          "evidenceHash": "0xdc2711526422501098d9e7a0bcd500d024419a1b3d0b029980987bc73f63a0b1",
+          "signer": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "signature": "0xb1e04df70c3ebe3be75ad7bcab58a267cf93c7be5f311deae6d87c4fc542a9764af4fb62bb39b326644e4edf424e0b874146488c47866d2e649c7ae6d479724f1c"
+        }
+      ]
+    },
+    {
+      "id": "normal",
+      "title": "Approved Argentina-France hedge",
+      "status": "executed",
+      "digest": "0xa284ea7fee60ae1a374945398d2c8b750a9a5bcafb468806b234009df8138d4d",
+      "canonicalDigest": "0x235458ea727bbf7471d9be9c1948785a5bf1135a6313df72ea6950ed8763fc4f",
+      "target": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "valueEth": "0.01",
+      "receiptHash": "0xe3d901d6b964724eb7f8e701e823df6d9feac50f520e6aa5ade31778dae61c58",
+      "executionTx": "0xc8fb5b6062f1e54f96f132ab2e7c2c458be7536f6f78afe57d73b1f10c1bff40",
+      "gatewayResult": "Gateway executed after both co-signers approved.",
+      "coSigners": [
+        {
+          "agent": "Co-signer A",
+          "model": "fast-executor-policy",
+          "verdict": "approve",
+          "summary": "Approved because value stayed under cap.",
+          "reasonCodes": [
+            "POLICY_MATCH"
+          ],
+          "evidenceHash": "0x6ebf3f09382f651ec23a07fdd668857a309624cb05f6e05f85884b740c707c45",
+          "signer": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "signature": "0xa257ec26184e8b10e5eacddb134e5e1d22f400737b3f556a20e408cf1be84db41db891e58b97f86bcd3762b422d8259ecf1fce22bb54326783d0fea29f1521dd1c"
+        },
+        {
+          "agent": "Co-signer B",
+          "model": "sentinel-policy",
+          "verdict": "approve",
+          "summary": "Approved: recipient, amount, deadline, and prompt context match policy.",
+          "reasonCodes": [
+            "POLICY_MATCH"
+          ],
+          "evidenceHash": "0xe5b7991264a3a0f64626c81f5e22a20896f1d590ee7ee3406fe771be9410e27b",
+          "signer": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "signature": "0xebd8dcb8fe16929c312cef4355d528322ed2cc15489036159bd449254d841d7364367bfde7a349f09d9ff3b44801a0894c27f6f90298e152bd8480ab0853d1001c"
+        }
+      ]
+    }
+  ]
+}
